@@ -5,3 +5,50 @@
 @import 'global.css.scss';
 @import 'notes.css.scss';
 @import 'welcome.css.scss';
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800);
+
+$orange: #F26101;
+$blue: #009DA5;
+
+$maxwidth: 564px;
+body {
+	background:#FAFAFA;
+}
+a {
+	text-decoration: none;
+}
+a:visited {
+	color:inherit;
+}
+header {
+	background: $orange;
+	.wrapper {
+		padding:20px;
+		position: relative;
+		max-width:$maxwidth;
+		margin:auto;
+		#logo {
+			img {
+				display:inline-block;
+			}
+			h3 {
+				font-family: 'Open Sans', sans-serif;
+				font-size: 14px;
+				color: #FFFFFF;
+				letter-spacing: 4.9px;
+				line-height: 18px;
+				display:inline-block;
+			}
+		}
+		#logout {
+			position: absolute;
+			right: 20px;
+			top: 30px;
+			color: white;
+			font-family: 'Open Sans', sans-serif;
+			font-size: 13px;
+			color: #FFFFFF;
+			line-height: 18px;
+		}
+	}
+}

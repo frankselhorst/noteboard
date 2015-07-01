@@ -1,4 +1,19 @@
-- @notes.each do |note|
-	%h2= link_to note.title, note
-	%p= time_ago_in_words(note.created_at)
-= link_to "New note", new_note_path
+%header
+	.wrapper
+		=link_to root_path, id: "logo" do
+			%h3 NOTEBOOK
+			= image_tag('logo.png', height: 'auto', width: '14')
+		#logout
+			- if user_signed_in?
+				/ = link_to "New note", new_note_path
+				= link_to "Sign Out", destroy_user_session_path, method: :delete
+			- else
+				= link_to "Log In", new_user_session_path
+#notes
+	= link_to "+", new_note_path, id: 'new_note'
+	- @notes.each do |note|
+		.note
+			=link_to note do
+				.inner
+					%h2= note.title
+					%p= time_ago_in_words(note.created_at) + " ago"

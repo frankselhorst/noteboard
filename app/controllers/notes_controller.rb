@@ -2,8 +2,8 @@ class NotesController < ApplicationController
 	before_action :findNote, only: [:show, :edit, :update, :destroy]
 	def index
 		# optional check for personal feed
-		@notes = Note.where(user_id: current_user)
-		# @notes = Note.all.order("created_at DESC")
+		# @notes = Note.where(user_id: current_user)
+		@notes = Note.all.order("created_at DESC")
 	end
 
 	def show

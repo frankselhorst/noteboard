@@ -1,3 +1,63 @@
-// Place all the styles related to the Notes controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+$maxwidth: 564px;
+
+#notes {
+	max-width:$maxwidth;
+	margin:auto;
+	padding:10px;
+	.note {
+		background:white;
+		box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.05);
+		-webkit-box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.05);
+		-moz-box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.05);
+		margin:1.5em 0;
+		-webkit-transition: box-shadow .5s ease-in-out;
+		   -moz-transition: box-shadow .5s ease-in-out;
+		    -ms-transition: box-shadow .5s ease-in-out;
+		     -o-transition: box-shadow .5s ease-in-out;
+		        transition: box-shadow .5s ease-in-out;
+		.inner {
+			padding: 30px 20px 20px 40px;
+			h2 {
+				margin-top:0;
+				margin-bottom:38px;
+				font-family: 'OpenSans-Bold', sans-serif;
+				font-size: 18px;
+				color: #292F33;
+				line-height: 28px;
+			}	
+			p {
+				/* half an hour ago by : */
+				font-family: 'OpenSans';
+				font-size: 13px;
+				color: #5A5A5A;
+				line-height: 18px;
+			}
+		}
+		&:hover {
+			box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.1);
+			-webkit-box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.1);
+			-moz-box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.1);
+		}
+	}
+	#new_note {
+		  background: #009DA5;
+		  border-radius: 50%;
+		  width: 60px;
+		  height: 60px;
+		  display: block;
+		  color: white;
+		  text-align: center;
+		  line-height: 180%;
+		  font-size: 31px;
+		  margin:.5em auto;
+		  position: relative;
+		  -webkit-transition: background 0.35s ease-in-out;
+		     -moz-transition: background 0.35s ease-in-out;
+		      -ms-transition: background 0.35s ease-in-out;
+		       -o-transition: background 0.35s ease-in-out;
+		          transition: background 0.35s ease-in-out;
+		  &:hover {
+		  	background:#007E84;
+		  }
+	}
+}
