@@ -32,6 +32,14 @@ $maxwidth: 564px;
 				color: #5A5A5A;
 				line-height: 18px;
 			}
+			.bottom {
+				p {
+					display: inline-block;
+				}
+				small {
+					font-size:11px;
+				}
+			}
 		}
 		&:hover {
 			box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.1);
