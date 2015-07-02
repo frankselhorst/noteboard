@@ -1,7 +1,7 @@
 %header
 	.wrapper
 		=link_to root_path, id: "logo" do
-			%h3 NOTEBOOK
+			%h3 NOTEBOARD
 			= image_tag('logo.png', height: 'auto', width: '14')
 		#logout
 			- if user_signed_in?
@@ -17,4 +17,5 @@
 				.inner
 					%h2= note.title
 					.bottom
-						%p= time_ago_in_words(note.created_at) + " ago by " +  note.user.email
+						%p= time_ago_in_words(note.created_at) + " ago by "
+						%p= note.user.username

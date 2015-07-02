@@ -11,6 +11,9 @@ $orange: #F26101;
 $blue: #009DA5;
 
 $maxwidth: 564px;
+* {
+	box-sizing: border-box;
+}
 body {
 	background:#FAFAFA;
 }

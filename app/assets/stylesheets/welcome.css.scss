@@ -1,3 +1,104 @@
 // Place all the styles related to the Welcome controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+a.button {
+	background: #009DA5;
+	border-radius: 40px;
+	font-family: SourceSansPro-Semibold;
+	font-size: 16px;
+	color: #FFFFFF;
+	line-height: 20px;
+	text-align: center;
+	padding: 19px;
+	margin: 2em auto;
+	max-width: 370px;
+	width: 100%;
+	display: block;
+	&:visited {
+		color:white;
+	}
+}
+#header {
+	background: #F26101;
+	max-height:396px;
+	min-height:396px;
+	padding:100px;
+	position: relative;
+	h1 {
+		/* NOTEBOOK: */
+		font-family: SourceSansPro-Semibold;
+		font-size: 20px;
+		color: #FFFFFF;
+		letter-spacing: 7px;
+		line-height: 25px;
+		text-align: center;
+	}
+	p {
+		font-family: SourceSansPro-ExtraLightIt;
+		font-size: 16px;
+		color: #FFFFFF;
+		line-height: 20px;
+		margin-bottom:25px;
+		text-align: center;
+	}
+	img {
+		display: block;
+		margin:auto;
+		margin-bottom:25px;
+	}
+	hr {
+		border: 1px solid #FFFFFF;
+		max-width:180px;
+	}
+	a.button {
+		position: absolute;
+		bottom: -29px;
+		left: 0;
+		right: 0;
+		max-width: 310px;
+		background: #009DA5;
+		border-radius: 40px;
+		font-family: SourceSansPro-Semibold;
+		font-size: 16px;
+		color: #FFFFFF;
+		line-height: 20px;
+		text-align: center;
+		padding: 19px;
+		margin: auto;
+	}
+	#login {
+	  display: block;
+	  font-family: SourceSansPro-ExtraLightIt;
+	  font-size: 16px;
+	  color: #FFFFFF;
+	  line-height: 20px;
+	  text-align: center;
+	  margin-top: 45px;
+	}
+}
+#usp {
+	max-width: 768px;
+	margin: 1em auto;
+	background:#F9F9F9;
+	.inner {
+		padding:80px 10px 10px 10px;
+		
+		.block {
+			p {
+				&.question {
+					font-family: SourceSansPro-ExtraLightIt;
+					font-size: 24px;
+					color: #0A0A0A;
+					line-height: 31px;
+				}
+				&.answer {
+					font-family: SourceSansPro-Semibold;
+					font-size: 24px;
+					color: #0A0A0A;
+					line-height: 31px;
+				}
+			}
+		}
+	}
+
+}
