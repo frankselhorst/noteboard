@@ -1,8 +1,9 @@
+= render 'header'
 %h1= @note.title
 %p= @note.content.html_safe 
 .buttons
 	= link_to "All notes", notes_path, class:'button'
-	
+
 	- if current_user.id == @note.user.id
 		= link_to "Edit", edit_note_path(@note), class:'button'
 		= link_to "Delete", note_path(@note), class:'button', method: :delete, data: { confirm: "Are you sure?" }
