@@ -1,0 +1,11 @@
+%header
+	.wrapper
+		=link_to root_path, id: "logo" do
+			%h3 NOTEBOARD
+			= image_tag('logo.png', height: 'auto', width: '14')
+		#logout
+			- if user_signed_in?
+				/ = link_to "New note", new_note_path
+				= link_to "Sign Out", destroy_user_session_path, method: :delete
+			- else
+				= link_to "Log In", new_user_session_path

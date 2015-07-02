@@ -1,3 +1,6 @@
-#note_control
-	%h1.newnote new note
-	= render 'form'
+= render 'header'
+#new_note_form
+	.inner
+		%h1.newnote new note
+		= render 'form'
+		= link_to "Cancel", notes_path, class: 'cancel'

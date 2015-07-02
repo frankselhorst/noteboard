@@ -1,7 +1,7 @@
 #header 
 	=link_to root_path, id: "logo" do
 		= image_tag('logo.png', height: 'auto', width: '22')
-		%h1 NOTEBOARD
+		%h1 NOTEBOOK
 		%p Free and minimal notebook application.
 		%hr
 	#login
@@ -14,12 +14,12 @@
 	.inner
 		.block
 			%p.question So what does it do?
-			%p.answer With noteboard you can create a note and share it with all users of the noteboard app.
+			%p.answer With notebook you can easily create a note and save it to the cloud accessible anywhere!
 		.block
-			%p.question So it’s like twitter?
-			%p.answer At the moment it kind of looks like Twitter yes but that’s because it’s a WIP and not everything has been implemented yet!
+			%p.question So it’s just a notes application ?
+			%p.answer Yes, but not "just" a notes application, notebook is awesome in all of it's awesome ways.
 		.block
 			%p.question Do i have to pay some kind of fee or premium membership?
-			%p.answer Nope, noteboard is forever free. I’ve also made it open source so check out my project on GitHub.
+			%p.answer Nope, notebook is forever free. I’ve also made it open source so check out my project on GitHub.
 
 	= link_to "CREATE ACCOUNT", new_user_registration_path, class: "button"

@@ -69,3 +69,85 @@ $maxwidth: 564px;
 		  }
 	}
 }
+
+#new_note_form {
+	max-width:567px;
+	margin:auto;
+	h1 {
+		font-family: SourceSansPro-Semibold;
+		font-size: 20px;
+		color: #F26101;
+		text-transform: uppercase;
+		letter-spacing: 7px;
+		line-height: 25px;
+	}
+	.inner {
+		padding:30px 20px;
+		position: relative;
+		.cancel {
+			position: absolute;
+			left: 350px;
+			bottom: 49px;
+			font-family: SourceSansPro-ExtraLightIt;
+			font-size: 16px;
+			color: #4A4A4A;
+			line-height: 20px;
+			&:visited{
+				color:inherit;
+			}
+		}
+		form {
+			display: block;
+			width: 100%;
+			input {
+				&[type="text"] {
+					display: block;
+					outline: none;
+					padding:10px;
+					width: 100%;
+					background:none;
+					box-shadow:none;
+					border: 1px solid #D2D2D2;
+					margin-top:15px;
+					margin-bottom:15px;
+				}
+				&[type="submit"] {
+
+					background: #009DA5;
+					border-radius: 40px;
+					font-family: SourceSansPro-Semibold;
+					font-size: 16px;
+					color: #FFFFFF;
+					line-height: 20px;
+					text-align: center;
+					padding: 19px;
+					max-width: 310px;
+					width: 100%;
+					margin-top:15px;
+					text-transform: uppercase;
+					border:0;
+					outline: none;
+					display: block;				
+				}
+			}
+			textarea {
+				display: block;
+				margin-top:15px;
+				outline: none;
+				padding:10px;
+				width: 100%;
+				background:none;
+				box-shadow:none;
+				border: 1px solid #D2D2D2;
+				resize:none;
+				min-height:320px;
+			}
+			label {
+				font-family: SourceSansPro-ExtraLightIt;
+				font-size: 16px;
+				color: #4A4A4A;
+				line-height: 20px;
+			}
+		}
+	}
+}
