@@ -1,9 +1,13 @@
 = render 'header'
-%h1= @note.title
-%p= @note.content.html_safe 
-.buttons
-	= link_to "All notes", notes_path, class:'button'
-
-	- if current_user.id == @note.user.id
-		= link_to "Edit", edit_note_path(@note), class:'button'
-		= link_to "Delete", note_path(@note), class:'button', method: :delete, data: { confirm: "Are you sure?" }
+.show_note
+	= link_to "Back to timeline", notes_path, class:'button-grey'
+	%h1= @note.title
+	.content
+		%p= @note.content.html_safe
+	.buttons
+		- if current_user
+			- if current_user.id == @note.user.id
+				= link_to "Edit", edit_note_path(@note), class:'button'
+				= link_to "Delete", note_path(@note), class:'button', method: :delete, data: { confirm: "Are you sure?" }
+		- else
+			

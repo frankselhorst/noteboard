@@ -1,5 +1,70 @@
 $maxwidth: 564px;
+.show_note {
+	max-width:570px;
+	margin:3em auto;
+	h1 {
+		font-family: SourceSansPro-Semibold;
+		font-size: 28px;
+		color: #0A0A0A;
+		line-height: 31px;
+	}
+	.content {
+		margin-bottom:35px;
+		p, div {
+			font-family: SourceSansPro-Light;
+			font-size: 17px;
+			color: #0A0A0A;
+			line-height: 32px;
+			strong {
+				font-family:SourceSansPro-SemiBold;
+			}
+		}
+		h1 {
+			font-size:24px;
+		}
+		h2 {
+			font-size:20px;
+		}
+		h3 {
+			font-size:18px;
+		}
 
+		ul {
+			li {
+				margin-bottom:8px;
+			}
+		}
+
+	}
+	
+	.button-grey {
+		font-family: SourceSansPro-Light;
+		font-size:15px;
+		position: relative;
+		top:-12px;
+		display: block;
+		color:#0A0A0A;
+	}
+	.buttons {
+		margin-top:20px;
+		a.button {
+			max-width: 310px;
+			background: #009DA5;
+			border-radius: 40px;
+			font-family: SourceSansPro-Semibold;
+			font-size: 16px;
+			color: #FFFFFF;
+			line-height: 20px;
+			text-align: center;
+			padding: 10px 30px 10px 30px;
+			margin:10px;
+			&:first-child {
+				margin-left:0;
+			}
+		
+		}
+	}
+}
 #notes {
 	max-width:$maxwidth;
 	margin:auto;
@@ -70,7 +135,7 @@ $maxwidth: 564px;
 	}
 }
 
-#new_note_form {
+#new_note_form, #edit_note_form {
 	max-width:567px;
 	margin:auto;
 	h1 {

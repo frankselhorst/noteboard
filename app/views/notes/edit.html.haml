@@ -1,5 +1,10 @@
+/ = render 'header'
+/ %h1 Edit note
+/ = render 'form'
 = render 'header'
-%h1 Edit note
-= render 'form'
-
+#edit_note_form
+	.inner
+		%h1.newnote new note
+		= render 'form'
+		= link_to "Cancel", notes_path, class: 'cancel'
 = link_to "Cancel", note_path, class:'note_cancel'
